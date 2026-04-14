@@ -1,0 +1,159 @@
+{
+  "1260479523972059210": {
+    "username": "mrrawp",
+    "stats": {
+      "name": "mrrawp",
+      "star": 36,
+      "rank": "[VIP] ",
+      "discordId": "unsnipeable",
+      "overall": {
+        "win": 662,
+        "loss": 37,
+        "bedbroken": 441,
+        "bedlost": 61,
+        "kills": 846,
+        "deaths": 1864,
+        "finalKills": 1460,
+        "finalDeaths": 42,
+        "vkills": 404,
+        "vdeaths": 834,
+        "vfinalKills": 458,
+        "vfinalDeaths": 8
+      },
+      "eight_one": {
+        "win": 1,
+        "loss": 1,
+        "bedbroken": 5,
+        "bedlost": 1,
+        "kills": 1,
+        "deaths": 1,
+        "finalKills": 6,
+        "finalDeaths": 1,
+        "vkills": 0,
+        "vdeaths": 1,
+        "vfinalKills": 1,
+        "vfinalDeaths": 0
+      },
+      "eight_two": {
+        "win": 34,
+        "loss": 5,
+        "bedbroken": 48,
+        "bedlost": 10,
+        "kills": 89,
+        "deaths": 173,
+        "finalKills": 82,
+        "finalDeaths": 7,
+        "vkills": 41,
+        "vdeaths": 79,
+        "vfinalKills": 35,
+        "vfinalDeaths": 3
+      },
+      "four_three": {
+        "win": 140,
+        "loss": 6,
+        "bedbroken": 98,
+        "bedlost": 12,
+        "kills": 263,
+        "deaths": 462,
+        "finalKills": 315,
+        "finalDeaths": 6,
+        "vkills": 127,
+        "vdeaths": 199,
+        "vfinalKills": 99,
+        "vfinalDeaths": 2
+      },
+      "four_four": {
+        "win": 432,
+        "loss": 25,
+        "bedbroken": 276,
+        "bedlost": 38,
+        "kills": 465,
+        "deaths": 1173,
+        "finalKills": 1008,
+        "finalDeaths": 28,
+        "vkills": 217,
+        "vdeaths": 521,
+        "vfinalKills": 311,
+        "vfinalDeaths": 3
+      },
+      "two_four": {
+        "win": 55,
+        "loss": 0,
+        "bedbroken": 14,
+        "bedlost": 0,
+        "kills": 28,
+        "deaths": 55,
+        "finalKills": 49,
+        "finalDeaths": 0,
+        "vkills": 19,
+        "vdeaths": 34,
+        "vfinalKills": 12,
+        "vfinalDeaths": 0
+      },
+      "castle": {
+        "win": 4,
+        "loss": 2,
+        "bedbroken": 0,
+        "bedlost": 8,
+        "kills": 1,
+        "deaths": 6,
+        "finalKills": 2,
+        "finalDeaths": 0,
+        "vkills": 0,
+        "vdeaths": 3,
+        "vfinalKills": 1,
+        "vfinalDeaths": 0
+      },
+      "four_four_totallynormal": {
+        "win": 8,
+        "loss": 1,
+        "bedbroken": 4,
+        "bedlost": 0,
+        "kills": 116,
+        "deaths": 52,
+        "finalKills": 14,
+        "finalDeaths": 1,
+        "vkills": 20,
+        "vdeaths": 23,
+        "vfinalKills": 4,
+        "vfinalDeaths": 1
+      },
+      "rush": {
+        "kills": 0,
+        "deaths": 0,
+        "finalKills": 0,
+        "finalDeaths": 0
+      },
+      "lucky": {
+        "kills": 12,
+        "deaths": 23,
+        "finalKills": 15,
+        "finalDeaths": 4
+      },
+      "swap": {
+        "kills": 0,
+        "deaths": 0,
+        "finalKills": 0,
+        "finalDeaths": 1
+      },
+      "ultimate": {
+        "kills": 2,
+        "deaths": 2,
+        "finalKills": 0,
+        "finalDeaths": 2
+      },
+      "voidless": {
+        "kills": 0,
+        "deaths": 0,
+        "finalKills": 0,
+        "finalDeaths": 0
+      },
+      "underworld": {
+        "kills": 0,
+        "deaths": 0,
+        "finalKills": 0,
+        "finalDeaths": 0
+      }
+    }
+  }
+}
