@@ -1,4 +1,4 @@
-# cherry
+# cherry <img src="https://i.imgur.com/7uwuGqW.png" width=40 style="position: relative; top: 10px;">
 A Discord bot displays a player's Hypixel Bedwars Stats.
 
 # installation
