@@ -1,6 +1,6 @@
 require("dotenv").config();
 
-const { Client, GatewayIntentBits } = require("discord.js");
+const { Client, GatewayIntentBits, ActivityType} = require("discord.js");
 const fs = require("fs");
 const path = require("path");
 
@@ -33,6 +33,10 @@ for (const file of eventFiles) {
 
 client.once("ready", () => {
     console.log(`Logged in as ${client.user.tag}`);
+    client.user.setActivity({
+        name: '/bedwars <player>',
+        type: ActivityType.Custom
+    });
 });
 
 client.login(process.env.DISCORD_TOKEN);

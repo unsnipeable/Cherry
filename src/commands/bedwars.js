@@ -7,7 +7,7 @@ const path = require("path");
 
 const { fetchStats } = require("../api/hypixel");
 const { buildEmbed } = require("../utils/embed");
-const { buildMenu } = require("../utils/menus");
+const { buildMenu, MODES} = require("../utils/menus");
 
 const { cache, CACHE_TIME } = require("../utils/cache");
 
@@ -46,12 +46,13 @@ module.exports = {
         }
 
         const now = Date.now();
+
         let stats;
 
         if (cache.has(username)) {
             const cached = cache.get(username);
 
-            if (now - cached.timestamp < CACHE_TIME) {
+            if (now - cached.time < CACHE_TIME) {
                 stats = cached.data;
             } else {
                 cache.delete(username);
@@ -67,21 +68,16 @@ module.exports = {
 
             cache.set(username, {
                 data: stats,
-                timestamp: now
+                time: now
             });
         }
 
-        if (!linkDB[interaction.user.id]) {
-            linkDB[interaction.user.id] = {};
-        }
-
-        linkDB[interaction.user.id].username = username;
-        linkDB[interaction.user.id].stats = stats;
-
         fs.writeFileSync(linkPath, JSON.stringify(linkDB, null, 2));
 
-        const embed = buildEmbed(username, "overall", stats);
-        const menu = buildMenu("overall");
+        let mode = "overall";
+
+        const embed = buildEmbed(username, mode, stats, cache.get(username).time);
+        const menu = buildMenu(mode);
 
         await interaction.editReply({
             embeds: [embed],

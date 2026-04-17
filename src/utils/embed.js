@@ -2,18 +2,16 @@ const { EmbedBuilder } = require("discord.js");
 const { MODES } = require("./menus");
 
 
-function buildEmbed(username, modeKey, stats) {
+function buildEmbed(username, modeKey, stats, now) {
 
     const s = stats[modeKey];
 
-    const wlr = s.loss === 0 ? s.win : (s.win / s.loss).toFixed(2);
-    const bblr = s.bedlost === 0 ? s.bedbroken : (s.bedbroken / s.bedlost).toFixed(2);
-
-    const kdr = s.deaths === 0 ? s.kills : (s.kills / s.deaths).toFixed(2);
-    const fkdr = s.finalDeaths === 0 ? s.finalKills : (s.finalKills / s.finalDeaths).toFixed(2);
-
-    const vkdr = s.vdeaths === 0 ? s.vkills : (s.vkills / s.vdeaths).toFixed(2);
-    const vfkdr = s.vfinalDeaths === 0 ? s.vfinalKills : (s.vfinalKills / s.vfinalDeaths).toFixed(2);
+    const wlr = ratio(s.win, s.loss);
+    const bblr = ratio(s.bedbroken, s.bedlost);
+    const kdr = ratio(s.kills, s.deaths);
+    const fkdr = ratio(s.finalKills, s.finalDeaths);
+    const vkdr = ratio(s.vkills, s.vdeaths);
+    const vfkdr = ratio(s.vfinalKills, s.vfinalDeaths);
 
     return new EmbedBuilder()
         .setColor(0x000000)
@@ -45,12 +43,20 @@ function buildEmbed(username, modeKey, stats) {
 
             { name: "Void Final Kills", value: `${s.vfinalKills}`, inline: true },
             { name: "Void Final Deaths", value: `${s.vfinalDeaths}`, inline: true },
-            { name: "<:final_kill:1493524704353325157> | Void FKDR <:void:1493524701480353854>", value: `${vfkdr}`, inline: true }
+            { name: "<:final_kill:1493524704353325157> | Void FKDR <:void:1493524701480353854>", value: `${vfkdr}`, inline: true },
+
+            { name: `Last Fetch: <t:${Math.floor( now/ 1000)}:R>`, value: `\u200B`, inline: false },
         )
         .setFooter({
             text:"made by mtnk | @unsnipeable"
         })
         .setTimestamp();
+}
+
+function ratio(a, b) {
+    a = a ?? 0;
+    b = b ?? 0;
+    return b === 0 ? a : (a / b).toFixed(2);
 }
 
 module.exports = {

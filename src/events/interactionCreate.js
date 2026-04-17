@@ -105,7 +105,7 @@ module.exports = (client) => {
                 }
 
                 const embed =
-                    buildEmbed(username, mode, cached.stats);
+                    buildEmbed(username, mode, cached.stats, cache.get(username).time);
 
                 await interaction.update({
                     embeds: [embed],
@@ -137,7 +137,9 @@ module.exports = (client) => {
 
                 let description;
 
-                if (modes.includes(mode)) {
+                if (mode === "four_four_totallynormal") {
+                    description = `Commands for this mode no longer work.`;
+                } else if (modes.includes(mode)) {
                     description =
                         `## ${MODES[mode]} Mode commands\n`+
                         `\`\`\`/play bedwars_eight_two_${mode}\`\`\`\n` +

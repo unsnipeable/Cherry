@@ -12,12 +12,12 @@ const MODES = {
     two_four: "4v4",
     castle: "Castle",
     rush: "Rush",
-    lucky: "Lucky",
+    lucky: "Lucky Block",
     swap: "Swappage",
     ultimate: "Ultimate",
     voidless: "Voidless",
     underworld: "Underworld",
-    totallynormal: "Totally Normal"
+    four_four_totallynormal: "Totally Normal"
 };
 
 function buildMenu(selected = "overall", id = "mode_select_statsbot") {
