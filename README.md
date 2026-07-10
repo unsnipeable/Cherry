@@ -1,5 +1,5 @@
 # <img src="https://i.imgur.com/7uwuGqW.png" width=40 style="position: relative; top: 10px;"> cherry <img src="https://i.imgur.com/7uwuGqW.png" width=40 style="position: relative; top: 10px;">
-A Discord bot displays a player's Hypixel Bedwars Stats.
+A Discord bot that displays a player's Hypixel Bedwars Stats.
 
 # Installation
 [Guild install](https://discord.com/oauth2/authorize?client_id=1493521288944160799&permissions=67584&integration_type=0&scope=bot)
